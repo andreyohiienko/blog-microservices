@@ -7,7 +7,7 @@ export default () => {
   const onSubmit = async (event) => {
     console.log('event', event)
     event.preventDefault()
-    await axios.post('http://posts.com/posts', { title })
+    await axios.post('http://posts.com/posts/create', { title })
     setTitle('')
   }
 
